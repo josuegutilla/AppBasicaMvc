@@ -20,6 +20,26 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Fornecedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Fornecedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Fornecedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Fornecedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Fornecedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Shared/_EnderecoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbmRlcmVjb1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Josué/OneDrive/Documentos/programação_estudos/CursoDev.io/Dominando ASP.NET MVC Core/AppMvcBasica/Views/Shared/_LoginPartial.cshtml]
