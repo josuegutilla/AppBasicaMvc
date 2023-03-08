@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppMvcBasica.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230308040642_TabelasSistema")]
+    [Migration("20230308152814_TabelasSistema")]
     partial class TabelasSistema
     {
         /// <inheritdoc />
@@ -119,10 +119,7 @@ namespace AppMvcBasica.Data.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<Guid>("FornecdorId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("FornecedorId")
+                    b.Property<Guid>("FornecedorId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Imagem")
@@ -362,7 +359,9 @@ namespace AppMvcBasica.Data.Migrations
                 {
                     b.HasOne("AppMvcBasica.Models.Fornecedor", "Fornecedor")
                         .WithMany("Produtos")
-                        .HasForeignKey("FornecedorId");
+                        .HasForeignKey("FornecedorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Fornecedor");
                 });

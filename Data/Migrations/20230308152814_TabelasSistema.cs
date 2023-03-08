@@ -56,14 +56,13 @@ namespace AppMvcBasica.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FornecdorId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    FornecedorId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Nome = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     Imagem = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Valor = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Ativo = table.Column<bool>(type: "bit", nullable: false),
-                    FornecedorId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    Ativo = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -72,7 +71,8 @@ namespace AppMvcBasica.Data.Migrations
                         name: "FK_Produtos_Fornecedores_FornecedorId",
                         column: x => x.FornecedorId,
                         principalTable: "Fornecedores",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
