@@ -1,16 +1,16 @@
 ﻿@model IEnumerable<AppMvcBasica.Models.Fornecedor>
 
 @{
-    ViewData["Title"] = "Fornecedores";
+    ViewData["Title"] = "Lista Fornecedores";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-info">Novo Fornecedor</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-hover">
+    <thead class="text-light bg-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.Ativo)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
             </td>
         </tr>
 }

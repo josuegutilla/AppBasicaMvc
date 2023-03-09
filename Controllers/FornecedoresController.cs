@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AppMvcBasica.Data;
 using AppMvcBasica.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AppMvcBasica.Controllers
 {
+    [Authorize]
     public class FornecedoresController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,6 +21,8 @@ namespace AppMvcBasica.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
+        [Route("lista-de-fornecedores")]
         // GET: Fornecedores
         public async Task<IActionResult> Index()
         {
@@ -26,6 +30,7 @@ namespace AppMvcBasica.Controllers
         }
 
         // GET: Fornecedores/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Fornecedores == null)

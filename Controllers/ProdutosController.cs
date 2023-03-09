@@ -2,9 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using AppMvcBasica.Data;
 using AppMvcBasica.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AppMvcBasica.Controllers
 {
+    [Authorize]
     public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -15,12 +17,15 @@ namespace AppMvcBasica.Controllers
         }
 
         // GET: Produtos
+        [AllowAnonymous]
+        [Route("lista-de-produtos")]
         public async Task<IActionResult> Index()
         {
               return View(await _context.Produtos.ToListAsync());
         }
 
         // GET: Produtos/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Produtos == null)
@@ -45,8 +50,6 @@ namespace AppMvcBasica.Controllers
         }
 
         // POST: Produtos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Produto produto)
@@ -77,8 +80,6 @@ namespace AppMvcBasica.Controllers
         }
 
         // POST: Produtos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, Produto produto)
